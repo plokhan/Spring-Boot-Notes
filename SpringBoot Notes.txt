@@ -1,0 +1,37 @@
+Spring Boot Notes
+
+********************************16th June
+MVC Artitechture
+
+
+Q.Why we are using the spring instead of java?
+R.Features offer by spring like security,AOP,to build instead off java
+  Reduce the bolier plate code
+  Easy to testing the code
+  Enables the loose coupling higher the cohesion 
+  
+  
+
+
+-Spring is focused on busniess logic(the logic which makes the UI responsive)
+
+******************************17th June
+Spring initializer
+--------------------------
+
+DI :- Dependency injection
+IOC:- 
+
+Singleton : Single object for each class
+Spring Cotainer:- The singleton object is save by sring that space is called Spring Cotainer.It is create and manage by Spring
+Spring is reponsible for creating , managing and deleting of spring Container
+
+Rule:-
+	1. The object which is relted with database so no need to create singleton
+	2. The object which required reference again thenn need to create singleton
+	
+***************************18th June
+
+	
+
+
