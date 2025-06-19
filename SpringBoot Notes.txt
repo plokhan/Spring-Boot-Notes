@@ -31,6 +31,44 @@ Rule:-
 	2. The object which required reference again thenn need to create singleton
 	
 ***************************18th June
+Create project through Spring initilizer and concept
+----------------------------------------------------
+To create project --> use spring initilizer in chrome
+
+ - @component annotation:- create object of class in spring, so it will be use where we want object --of a class.So constructor is created
+
+- @SpringBootApplication annotation :- It has three annotation inside it, @ComponentScan do check the @Component annotation in classes and create the object of that classes
+
+
+
+- @Service :- It also create the object of a class so it can use the object in other classes.So constructor is created
+
+- @Repository:-  It also create the object of a class so it can use the object in other classes.So constructor is created
+
+
+- @Controller:- It also create the object of a class so it can use the object in other classes.So constructor is created  
+
+- @RestController:- It also create the object of a class so it can use the object in other classes.So constructor is created
+
+- @ComponentScan:- It also create the object of a class so it can use the object in other classes.So constructor is created
+
+
+-----------Summar of above annotation-----------------------------------------------
+
+- @Service, @Repository,@Controller,@RestController ,@ComponentScan & @Configuration  @SpringBootApplication are @Component from inside.Constructor is created
+
+-------------------------------------------------------------------------------------
+To use this object have to use @AutoWired annotation with object name
+
+Ex:- 	@AutoWired
+		StudentController studentController;
+
+-It create single object and use the same object to others Classes as well.This is called Singletone.
+
+
+Q.  Why component have different annotiontion?
+R. Different treatment and different reposnible for annotation 
+
 
 ****************************19th June
 	
