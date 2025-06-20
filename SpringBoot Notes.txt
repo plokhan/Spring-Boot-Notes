@@ -100,6 +100,8 @@ to mention in Qualifier as mentioned "savcc"
 -If two to three class having Primary annotation then use the 
 Qualifier then ignore the primary annotation in other classes.
 
+- If injection use above property then it is property injection.
+
 
 	
 
