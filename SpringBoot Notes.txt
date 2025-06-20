@@ -75,6 +75,32 @@ Handson Components
 --------------------------
 Task :- project Name sayhello (workspace - Spring Workspace)
 
+*************************20th June
+Q. What is Dependency injection?
+
+@Primary :- it send the object of the class which having primary annotation. Mention above the class name. It use appropriate object
+
+to check it syso(obj.account)
+
+
+@Qualifier :- it send the object which mentioned.It is write where have write Autowire
+
+ex:- @Autowire
+     @Qualifier("savcc")
+
+
+@component("savcc")
+public class SavingAccount 
+
+Able to give the name to component 
+to mention in Qualifier as mentioned "savcc"
+
+-If mention Qualifier and Primary then, object send where Qualifer annotation is used
+
+-If two to three class having Primary annotation then use the 
+Qualifier then ignore the primary annotation in other classes.
+
+
 	
 
 
