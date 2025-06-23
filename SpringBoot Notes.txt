@@ -85,8 +85,8 @@ to check it syso(obj.account)
 
 @Qualifier :- it send the object which mentioned.It is write where have write Autowire
 
-ex:- @Autowire
-     @Qualifier("savcc")
+ex:- @Autowired
+     @Qualifier("savcc")    savcc = object name
 
 
 @component("savcc")
@@ -102,7 +102,58 @@ Qualifier then ignore the primary annotation in other classes.
 
 - If injection use above property then it is property injection.
 
+- To use only one object to other classes then have to use @Autowired 
 
-	
+- @Autowired is a property injection
 
+
+**********************************23rd June
+
+Dependency Injection
+----------------------------
+
+@Service("studentservice")
+
+class StudentService{
+
+}
+
+@Repository("studentRepository")
+class StudentRepository{
+
+}
+
+@RestController("studentController")
+class StudentController{
+
+}
+
+
+Inversion of control(IOC) :-  Spring take a control to behaves property injection and other things. where the control of object instantiation and dependency management is inverted
+
+Component Scan:- can the component to create the object
+Autowired :- acheive the dependency injection
+
+
+Spring having two things depndency injection and spring IOC 
+---------------------------------------------------------------
+Spring Boot contains:- 
+
+Spring JPA
+Spring AOP
+Spring Web
+Spring MVC
+Spring Expection Hnadaling
+Spring Security
+Spring Testing
+.....
+
+
+
+
+Explore the Graph Query
+
+Layers between Database and UI 
+- UI --> RestController -->Service --> Repository --> Database  and vice versa 
+ 
 
