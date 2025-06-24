@@ -155,5 +155,16 @@ Explore the Graph Query
 
 Layers between Database and UI 
 - UI --> RestController -->Service --> Repository --> Database  and vice versa 
+
+********************************24th June
+Hands On
+--------------------
+@Getmapping :- use to call in url
+ ex:- @GetMapping("/getall") :- http://localhost:8080/getall
+
+@ResponseBody:- reponse to 
+
+
+
  
 
