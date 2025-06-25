@@ -162,7 +162,21 @@ Hands On
 @Getmapping :- use to call in url
  ex:- @GetMapping("/getall") :- http://localhost:8080/getall
 
+Use of Controller :- Take request , and give response 
+
+@RestController:-To send data use restcontroller
+@Controller:-to send html ,jsp page use Controller and use to send the controller
 @ResponseBody:- reponse to 
+
+****************************************25th June
+
+- Rest controller also a controller
+- To send data use the rest controller
+- Don't send the view with rest controller
+
+@Service
+
+
 
 
 
