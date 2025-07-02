@@ -177,7 +177,7 @@ Use of Controller :- Take request , and give response
 @Service
 
 **********************************************30 th June
-HandsOn (Project name :- Spring 1)
+HandsOn (Project name :- Spring 1) -->spring project folder
 --------------------
 
 Q.How to add new product data through the Spring and get the same data in json
@@ -185,6 +185,9 @@ Q.How to add new product data through the Spring and get the same data in json
 @RequestBody:-  To send the request 
 
 @Patharibale :- Take data from URL 
+
+***********************************************1st July
+HandsOn (Project name :- inv)  --> 
 
 
 
