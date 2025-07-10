@@ -189,9 +189,118 @@ Q.How to add new product data through the Spring and get the same data in json
 ***********************************************1st July
 HandsOn (Project name :- inv)  --> 
 
+***********************************************2nd July
+
+Spring Annotations
+
+Core Spring:-                                 
+	@SpringBootApplication			@ReqestBody
+	@Component				@GetMapping
+	@ComponentScan				@RequestMapping
+	@AutoConfiguration			@PathVaribale
+	@Service				@Entity
+	@Repository				@Id
+	@RestController				@Bean
+	@Controller
+	@Autowired
+	@Primary
+	@qualifier
+
+
+Lombok :- 				Hibernate:-
+
+	@Setter					@Entity
+	@Getter					@Table
+	@AllArgsConstructor			@Column
+	@NoArgsConstructor			@Id
+	@Data					@GernatedValue
+	@ToString				@OneToOne
+						@OneToMany	
+						@ManyToMany	
+						@JoinColumn
+
+
+
+Methods Also written Automatically in Spring
+Agends :- Query Parmeter And Response Entity
+ 	--------------------------------------
+End point basically collecting the resource
+
+http://localhost:8080/app/getuser/567 --> @PathVariable
+
+http://localhost:8080/app/getuser --> @RequestBody
+{
+"id" :101;
+"name" :"abhay"
+}
+
+If JSON want to store in object use the @RequestBody
+
+http://localhost:8080/app/getuser?product="stationary"&price=5000 --> @RequestaParam 
+
+
+//This  is called as QueryString(key, value) --> it should be in key and value  
+//http://localhost:8080/getproductpriceandrating?price=500
+@GetMapping("/getproductpriceandrating")
+public double getProductPriceRating(@RequestParam (name = "price") double price){
+
+return price+100;
+}
+
+After ? in url @RequstParam read it
+
+**********************************************3rd July
 
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
