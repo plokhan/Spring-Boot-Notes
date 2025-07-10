@@ -272,18 +272,59 @@ interface UserRepository extends JpaRepository<User, Integer>
  List<User> findAllByRole(String Role);
 
 **********************************************3rd July
+HandsOn 
+
+**********************************************4th July
+With the use of Spring Web dependencies able to use the annotation like input, Autowired
+
+Spring Devtools --> use for After save delpoyed 
+Spring JPA-->
+
+@PostMapping  When we have to add the data from outside to add in db
 
 
 
+@PostMapping
+public void addAccount(@RequestBody Account account)
+
+@GetMapping("/getaccounts")
+public List <Account> getAllAccount(){
+return null;
+}
+
+@GetMapping ("path/{id}")
+public Account getAccount(@PathVariable int id){
+return null;
+}
 
 
+@PatchMapping("=/updatebal")
+public void updateBalanceByAid(@RequestParam int id, @RequestParam double bal){
+
+}
+
+@Deleteapping("/delbyid/{id}")
+ voiddeleteById(@PathVaribale int id){
+
+ }
 
 
+___________________________________
 
+Custom Query
 
+@Modifying
+@Transactional
+@Query("Update Account SET balance=:bal where id=:id")
+void updateBalanceByAid(int id, double bal);
 
+-- Only for testing purpose--
+For Security of URL
+Add the spring security depedency with the artifacId of spring-boot-starter-security
+And add the spring.security.user.name= username
+spring.security.user.password= password
 
-
+So whenever third party try to access the url first need to login with usrname and password
 
 
 
