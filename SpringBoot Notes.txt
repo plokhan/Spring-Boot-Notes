@@ -2,7 +2,7 @@ Spring Boot Notes
 
 ********************************16th June
 MVC Artitechture
-
+ 
 
 Q.Why we are using the spring instead of java?
 R.Features offer by spring like security,AOP,to build instead off java
