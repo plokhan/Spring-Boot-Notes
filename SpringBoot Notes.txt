@@ -249,6 +249,28 @@ return price+100;
 
 After ? in url @RequstParam read it
 
+
+Class UserController 
+
+//http://localhost:8080/app/userwithrole?role=admin
+	@GetMapping("/userwithrole")
+	public  List<User> getuserWithRole(@RequestParam (name="role") String role){
+		List<User> list = userservice.getuserWithRole(role);
+		return list;
+	}
+
+Class UserService
+
+public List<User> getuserWithRole(String role){
+		 List<User> list = userRepository.findAllByRole(role);
+		
+		return list;
+	}
+	
+interface UserRepository extends JpaRepository<User, Integer> 
+
+ List<User> findAllByRole(String Role);
+
 **********************************************3rd July
 
 
