@@ -324,41 +324,61 @@ Add the spring security depedency with the artifacId of spring-boot-starter-secu
 And add the spring.security.user.name= username
 spring.security.user.password= password
 
-So whenever third party try to access the url first need to login with usrname and password
+So whenever third party try to access the url first need to login with username and password
 
 
+*********************************************7th July
+Agenda:-  Expectional Handling with spring boot
+
+Which Dependencies we need for spring
+
+Spring web 
+Sprin dev tool
+MYSQL Driver
+Spring Data JPA
+lombok
+
+EmpController:- 
+
+@GetMapping("/getemp")
+public Emp getEmpById(@RequesrParam int id){
+Emp emp = null;
+if(id<0)
+   throws new IllegalArgumentExpection("ID IS NEGATIVE.....");
+if(id>100)
+throws new IndexOutOfBoundsExpection("Expectin raise : OOut Of Range");
+else{
+Emp emp= emp.Service.getEmpById(id);
+return emp;
+}
+
+}
+
+@ExpectionalHandler(IllegalArgumentExpection.class)
+void handleMyExpection(IllegalArgumentExpecion e){
+	ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+}
+
+@ExpectionalHandler(IndexOutOfBoundsExpection.class)
+void handleMyExpection2(IndexOutOfBoundsExpection e){
+	ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+}
 
 
+EmpService:- 
 
 
+	Public Emp getEmpById(int id){
+Optional <Emp> byId = empRepository.findById(id);
+if(byId.ispresent())	
+return byId.get();
+else
+return null;
+}
 
+HandsOn Example of project name :_ com.tcs.employee.entity 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Class Name Employee
 
 
 
