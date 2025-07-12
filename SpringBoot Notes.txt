@@ -376,12 +376,35 @@ else
 return null;
 }
 
-HandsOn Example of project name :_ com.tcs.employee.entity 
+HandsOn Example of project name :- com.tcs.employee.entity 
 
 Class Name Employee
 
 
 *******************************9th July
+Agenda :- Security
+
+http protocal State doesnot maintain the state :-  means --> A server using a stateless protocol doesn't retain data about previous requests from a client. 
+
+-To retain the client session is active by Session Management.
+-One Connection with data base And One connection with serve
+
+-Storing the username and Password is called session
+
+- Spring Security Maintain the session management on every interval and every interact
+-Multiple session is their 
+- Mutiple tab in sinngle browser is the one session, if new browser in new system or new browser in same system is different session
+-Single user has multiple session
+
+********************************************10 th July
+
+Agenda :- Controller
+
+Dispatcher Servlet :- Send the request to correct controller
+
+
+
+
 
 
 
